@@ -1235,9 +1235,13 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject();
 		},
-		() => 795,
+		() => 1,
 		() => 0,
-		() => 1
+		() => 30,
+		() => "Animation 2",
+		() => 680,
+		() => 780,
+		() => 70
 ];
 
 
