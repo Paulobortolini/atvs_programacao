@@ -9,6 +9,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Platform,
 		C3.Behaviors.bound,
 		C3.Plugins.Text,
+		C3.Behaviors.Pin,
+		C3.Behaviors.MoveTo,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.Text.Acts.SetText,
 		C3.Plugins.System.Acts.Scroll,
@@ -20,9 +22,12 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.RestartLayout,
 		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.System.Cnds.Compare,
-		C3.Plugins.Sprite.Acts.SetAnim,
-		C3.Behaviors.solid.Acts.SetEnabled,
-		C3.Behaviors.Bullet.Acts.SetSpeed
+		C3.Plugins.System.Acts.GoToLayout,
+		C3.Behaviors.Bullet.Acts.SetSpeed,
+		C3.Behaviors.Platform.Exps.VectorX,
+		C3.Plugins.Sprite.Acts.SetMirrored,
+		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Behaviors.Pin.Acts.PinByImagePoint
 	];
 };
 self.C3_JsPropNameTable = [
@@ -42,6 +47,12 @@ self.C3_JsPropNameTable = [
 	{Sprite5: 0},
 	{Sprite2: 0},
 	{Texto3: 0},
+	{Texto: 0},
+	{Fixar: 0},
+	{personagem2: 0},
+	{MoverPara: 0},
+	{Texto4: 0},
+	{Sprite6: 0},
 	{moedas: 0},
 	{armadilha: 0}
 ];
@@ -56,5 +67,9 @@ self.InstanceType = {
 	Sprite4: class extends self.ISpriteInstance {},
 	Sprite5: class extends self.ISpriteInstance {},
 	Sprite2: class extends self.ISpriteInstance {},
-	Texto3: class extends self.ITextInstance {}
+	Texto3: class extends self.ITextInstance {},
+	Texto: class extends self.ITextInstance {},
+	personagem2: class extends self.ISpriteInstance {},
+	Texto4: class extends self.ITextInstance {},
+	Sprite6: class extends self.ISpriteInstance {}
 }
